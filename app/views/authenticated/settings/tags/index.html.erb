@@ -17,7 +17,7 @@
         <td><%= tag.title %></td>
         <td><%= tag.color %></td>
         <td><%= link_to 'Show', tag %></td>
-        <td><%= link_to 'Edit', edit_setting_tag_path (tag) %></td>
+        <td><%= link_to 'Edit', edit_settings_tag_path(tag) %></td>
         <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -26,4 +26,5 @@
 
 <br>
 
-<%= link_to 'New Tag', new_setting_tag_path %>
+<h6><%= link_to 'New Tag', new_settings_tag_path %></h6>
+<h6><%= link_to 'Back to Tasks', tasks_path %></h6>
