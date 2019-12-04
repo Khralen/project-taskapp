@@ -16,9 +16,9 @@
       <tr>
         <td><%= tag.title %></td>
         <td><%= tag.color %></td>
-        <td><%= link_to 'Show', tag %></td>
+        <td><%= link_to 'Show', [:settings, tag] %></td>
         <td><%= link_to 'Edit', edit_settings_tag_path(tag) %></td>
-        <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', [:settings, tag], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

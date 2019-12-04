@@ -69,6 +69,6 @@ class Authenticated::TasksController < AuthenticatedController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:title, :note, :is_done, :deadline_at, :user_id, :category_id)
+      params.require(:task).permit(:title, :note, :is_done, :deadline_at, :category_id).merge(user_id: current_user.id)
     end
 end
