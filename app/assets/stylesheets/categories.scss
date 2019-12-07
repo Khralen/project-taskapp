@@ -1,3 +1,85 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  //background-image: url("wallpaper1.jpg");
+}
+head {
+  //background-image: url(".jpg");
+}
+tbody {
+  position: relative;
+  left: 50%;
+}
+
+a.btn.btn-outline-dark {
+  color: #DADADA;
+  //padding: 5px;
+  //border: 5px;
+  margin: 5px;
+}
+a:visited {
+  color: #730E15;
+}
+a {
+  color: #DADADA;
+}
+
+div.categories-page {
+  background-image: url("wallpaper1.jpg");
+  color: #DADADA;
+  //text-align: center;
+  text-align: left;
+  padding: 30px;
+  border: 10px;
+  margin: 10px;
+}
+div.homepage-h1 {
+  background-image: url("wallpaper1.jpg");
+  //opacity: 0.5%;
+  color: #DADADA;
+  padding: 30px;
+  border: 10px;
+  //margin: 10px;
+  margin: 5px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  //margin-left: 40%;
+  //margin-right: 40%;
+  //background: #cc0000;
+}
+
+image {
+  opacity: 50%;
+}
+
+nav.li { //mj
+  //display: block;
+  display: inline;
+  width: 6px;
+  padding: 8px;
+}
+
+tr {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  //background-color: #333;
+}
+
+td, th {
+  float: left;
+  margin-left:10px;
+  //position: absolute;
+  left: 120px;
+  top: 50%;
+  text-align: center;
+  //display: inline;
+  display: block;
+  color: white;
+  //padding: 1px 2px;
+}
+
