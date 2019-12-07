@@ -13,8 +13,10 @@ a.btn.btn-outline-dark {
   color: #DADADA;
 }
 
-div.homepage {
+
+div.task-edit-page, div.task-index-page, div.task-new-page, div.task-new-page, div.task-show-page {
   background-image: url("wallpaper1.jpg");
+  color: #DADADA;
   text-align: center;
   padding: 30px;
   border: 10px;

@@ -1,5 +1,10 @@
-<h1>Settings</h1>
-<!--<h6><%#= link_to 'Logout', destroy_user_session_path, method: :delete %></h6>-->
-<h6><%= link_to 'Categories', settings_categories_path %></h6>
-<h6><%= link_to 'Tags', settings_tags_path %></h6>
-<h6><%= link_to 'Home', root_path %></h6>
+<div class="settings-page">
+  <div class="settings-h1"><h1>Settings</h1></div>
+  <!--<h6><%#= link_to 'Logout', destroy_user_session_path, method: :delete %></h6>-->
+  <h6><%= link_to 'Home', root_path, :class => "btn btn-outline-dark" %></h6>
+  <h6><%= link_to 'Forgot your password?', new_user_password_path, :class => "btn btn-outline-dark" %></h6>
+  <h6><%= link_to 'Change your password', edit_user_password_path, :class => "btn btn btn-outline-dark btn-md" %></h6>
+  <h6><%= link_to 'Edit account', edit_user_registration_path, :class => "btn btn btn-outline-dark btn-md" %></h6>
+  <h6><%= link_to 'Delete account', edit_user_registration_path, :class => "btn btn btn-outline-dark btn-md" %></h6>
+  <h6><%= link_to "Cancel my account", registration_path(current_user), data: {confirm: "Are you sure?"}, method: :delete, :class => "btn btn-outline-dark" %></h6>
+</div>

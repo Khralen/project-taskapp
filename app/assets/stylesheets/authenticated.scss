@@ -9,18 +9,29 @@ head {
   //background-image: url(".jpg");
 }
 
-a.btn.btn-outline-dark {
+a.btn.btn-outline-dark, div.btn {
   color: #DADADA;
 }
 
-div.homepage {
+div.login-page, div.sign-up-page, div.password-new-page, div.forgot-password-page {
   background-image: url("wallpaper1.jpg");
+  color: #DADADA;
   text-align: center;
   padding: 30px;
   border: 10px;
   margin: 10px;
 }
-div.homepage-h1 {
+div.login-page-h2 {
+  //background-image: url("wallpaper1.jpg");
+  color: #DADADA;
+  padding: 30px;
+  border: 10px;
+  //margin: 10px;
+  margin: 5px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+div.form-inputs {
   background-image: url("wallpaper1.jpg");
   //opacity: 0.5%;
   color: #DADADA;
@@ -30,49 +41,14 @@ div.homepage-h1 {
   margin: 5px;
   margin-left: 35%;
   margin-right: 35%;
-
-  //margin-left: 40%;
-  //margin-right: 40%;
-  //background: #cc0000;
 }
 
 image {
   opacity: 50%;
 }
 
-div.anonymous-user-bar { //mj
-  fontcolor: #BBBBBB;
-  color: blueviolet;
+div.login-page {
+  color: #DADADA;
 }
 
-nav.li { //mj
-  //display: block;
-  display: inline;
-  width: 6px;
-  padding: 8px;
-}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  //background-color: #333;
-}
-
-li {
-  float: left;
-  margin-left:10px;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-div.homepage-signed-up.h6 {
-  text-align: center;
-}
