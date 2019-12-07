@@ -4,7 +4,14 @@ class Authenticated::TasksController < AuthenticatedController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    #@tasks = Task.all
+
+    @tasks = Task.includes(:category)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @tasks }
+    end
   end
 
   # GET /tasks/1
@@ -19,6 +26,11 @@ class Authenticated::TasksController < AuthenticatedController
 
   # GET /tasks/1/edit
   def edit
+  end
+
+  def get_tasks
+    @tasks = Task.joins(:tag_associations).where(:tags => { :id => params[:id]}).all
+    #@task = Tasks.joins(:tag_associations).where(:id => {:tag_id})
   end
 
   # POST /tasks

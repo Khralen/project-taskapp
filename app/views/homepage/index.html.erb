@@ -1,8 +1,21 @@
-<h1>Mainpage</h1>
-<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-<h6><%= link_to 'Categories', settings_categories_path %></h6>
-<h6><%= link_to 'Tags', settings_tags_path %></h6>
-<!--<h6><%#= link_to 'Settings',  controller: 'settings'%></h6>-->
-<h6><%= link_to 'Settings', settings_path %></h6>
+<h1>Homepage</h1>
+<% if current_user.nil?%>
+  <h6><%= link_to 'Sign up (new user)', new_user_registration_path %></h6>
+  <h6><%= link_to 'Sign in', new_user_session_path %></h6>
+  <h6><%= link_to 'Forgot your password?', new_user_password_path %></h6>
 
-<%#= link_to "Destroy", user, method: :delete, data: { confirm: "You sure?" } %>
+<% else %>
+  <h6><%= link_to 'Settings', settings_path %></h6>
+  <h6><%= link_to 'Tasks', tasks_path %></h6>
+
+  <h6><%= link_to 'Logout', destroy_user_session_path, method: :delete %></h6>
+  <!--<h6><%#= link_to 'Settings',  controller: 'settings'%></h6>-->
+
+  <h6><%= link_to 'Edit account',  edit_user_registration_path %></h6>
+  <h6><%= link_to 'Delete account',  edit_user_registration_path %></h6>
+  <h6><%= link_to 'Change your password',  edit_user_password_path %></h6>
+
+  <h6><%= link_to 'Categories', settings_categories_path %></h6>
+  <h6><%= link_to 'Tags', settings_tags_path %></h6>
+  <%#= link_to "Destroy", user, method: :delete, data: { confirm: "You sure?" } %>
+<% end %>

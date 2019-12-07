@@ -4,7 +4,8 @@ class Authenticated::Settings::TagsController < AuthenticatedController
   # GET /tags
   # GET /tags.json
   def index
-    @tags = Tag.all
+    #@tags = Tag.all
+    @tags = current_user.tags
   end
 
   # GET /tags/1
@@ -25,6 +26,7 @@ class Authenticated::Settings::TagsController < AuthenticatedController
   # POST /tags.json
   def create
     @tag = Tag.new(tag_params)
+    #@tags = current_user.tags.new
 
     respond_to do |format|
       if @tag.save
