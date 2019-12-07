@@ -9,10 +9,12 @@ head {
   //background-image: url(".jpg");
 }
 
-a.btn.btn-outline-dark {
+a.btn.btn-outline-dark, input.btn {
   color: #DADADA;
 }
-
+input.btn {
+  margin: 10px;
+}
 
 div.task-edit-page, div.task-index-page, div.task-new-page, div.task-new-page, div.task-show-page {
   background-image: url("wallpaper1.jpg");

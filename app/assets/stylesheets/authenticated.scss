@@ -9,11 +9,11 @@ head {
   //background-image: url(".jpg");
 }
 
-a.btn.btn-outline-dark, div.btn {
+a.btn.btn-outline-dark, div.btn, input.btn {
   color: #DADADA;
 }
 
-div.login-page, div.sign-up-page, div.password-new-page, div.forgot-password-page {
+div.login-page, div.sign-up-page, div.password-new-page, div.forgot-password-page, div.edit-user-page {
   background-image: url("wallpaper1.jpg");
   color: #DADADA;
   text-align: center;

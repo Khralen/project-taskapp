@@ -13,7 +13,8 @@ a.btn.btn-outline-dark {
   color: #DADADA;
 }
 
-div.homepage {
+div.tag-edit-page, div.tag-index-page, div.tag-new-page, div.tag-show-page {
+  color: #DADADA;
   background-image: url("wallpaper1.jpg");
   text-align: center;
   padding: 30px;
@@ -22,18 +23,10 @@ div.homepage {
 }
 div.homepage-h1 {
   background-image: url("wallpaper1.jpg");
-  //opacity: 0.5%;
-  color: #DADADA;
-  padding: 30px;
-  border: 10px;
-  //margin: 10px;
+
   margin: 5px;
   margin-left: 35%;
   margin-right: 35%;
-
-  //margin-left: 40%;
-  //margin-right: 40%;
-  //background: #cc0000;
 }
 
 image {

@@ -1,4 +1,6 @@
+<div class="category-new-page">
 <h1>New Category</h1>
 
-<%= render 'form', category: @category %>
-<%= link_to 'Back', settings_categories_path %>
+<%= render 'form', category: @category, :class => "btn btn-outline-dark btn-sm" %>
+<%= link_to 'Back', settings_categories_path, :class => "btn btn-outline-dark btn-sm" %>
+</div>

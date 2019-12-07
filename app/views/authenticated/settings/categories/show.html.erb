@@ -1,3 +1,4 @@
+<div class="category-show-page">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -10,5 +11,6 @@
   <%= @category.color %>
 </p>
 
-<%= link_to 'Edit', edit_settings_category_path(@category) %> |
-<%= link_to 'Back', settings_categories_path %>
+<%= link_to 'Edit', edit_settings_category_path(@category), :class => "btn btn-outline-dark" %> |
+<%= link_to 'Back', settings_categories_path, :class => "btn btn-outline-dark" %>
+</div>
