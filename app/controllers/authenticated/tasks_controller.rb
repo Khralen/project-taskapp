@@ -83,4 +83,5 @@ class Authenticated::TasksController < AuthenticatedController
     def task_params
       params.require(:task).permit(:title, :note, :is_done, :deadline_at, :category_id).merge(user_id: current_user.id)
     end
+
 end
